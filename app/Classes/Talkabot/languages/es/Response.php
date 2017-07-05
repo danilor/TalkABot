@@ -31,9 +31,9 @@ class Response extends \Talkabot\languages\Response
 
         $aux = new ResponseOption();
         $aux
-            ->addAnalysis( "(como)(esta)(?)" )
+            ->addAnalysis( "(como)(esta|estas|encuentras)(?)" )
             ->addAnalysis( "(que)(tal)(?)" )
-            ->addAnalysis( "(que)(tal)(?)" )
+            ->addAnalysis( "(que)(tal)(esta|estas)(?)" )
             ->addResponse( "Bien gracias" )
             ->addResponse( "Perfectamente" )
             ->addResponse( "Genial" )
