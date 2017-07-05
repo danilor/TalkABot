@@ -1,26 +1,33 @@
 @extends('start.template')
 @section("content")
-    <p>DIGITAL KATACLYSM (Current version {{ \Kataclysm\Kataclysm::CURRENT_VERSION }}) is a Framework
-        inspired in applications such as Laravel and other MVC frameworks. It tries to stay as loyal to the
-        Laravel structure (and ideology) and at the same time have its own magic in it. It is even using some of the most popular Laravel packages, but trying to use only the necessary ones.</p>
     <p>
-        Current Environment:
-    </p>
-    <p>
-    <center>
-        <strong>
-            {{ env("ENV") }} | KEY:  {{ config("app.app_key") }}
-        </strong>
-    </center>
+        Welcome to TalkABot. Write something
     </p>
 
-    <p>
-        This is a working process, so its normal find some issues and errors. If you find something that you consider that slipped from my hands, please let me know.
-    </p>
+    <form>
+        <div class="form-group">
+            <input type="text" name="content" id="content" class="form-control" placeholder="Escribe algo" aria-describedby="helpContent">
+            <small id="helpContent" class="text-muted">El texto que le quieres enviar al robot</small>
+        </div>
 
-    <p>This is a temporal landing page. You can wait for the most awesome landing page you have ever see in the future, so this one is going to be replaced.</p>
-    <p>
-        In the meantime, why don't you check my <a href="/mygithub">Github account</a>? Maybe you can find something of your interest!
-        Or maybe you want to see a <a href="/yvideo/wvO3zJaNBjs">nice video</a> that shows you how the dynamic URL works!
-    </p>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+        <div id="responses">
+            <div class="col-xs-12 bot text-line">
+
+                    <div class="span col-xs-12 col-sm-12 col-md-3 col-lg-2">
+                        BOT
+                    </div>
+                    <div class="text col-xs-12 col-sm-12 col-md-9 col-lg-10">
+                        Hola. Soy TalkABot. Fui construido con el lenguaje de programación PHP y estoy en proceso de desarrollo.
+                    </div>
+            </div>
+            <div class="col-xs-12">
+                <hr />
+            </div>
+
+        </div>
+
+    </form>
 @stop

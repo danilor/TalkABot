@@ -1,7 +1,7 @@
 <head>
     <!-- LANDING PAGE BASED ON https://onepagelove.com/tust -->
     <title>
-        Digital Kataclysm
+        TalkABot
     </title>
 
 @include("templates.blocks.headerCSS")
