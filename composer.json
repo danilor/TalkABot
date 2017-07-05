@@ -1,0 +1,28 @@
+{
+  "name": "DaniloRamirezCR/DigitalKataclysm",
+  "description": "Lightweight framework inspired in Laravel",
+  "license": "GNU",
+  "type":"project",
+  "require": {
+    "illuminate/database": "^5.1",
+    "philo/laravel-blade": "3.*"
+  },
+  "autoload": {
+    "files":[
+      "app/Helpers/helpers.php",
+      "app/Routing/routes.php"
+    ],
+    "classmap": [
+      "app/Classes",
+      "app/Controllers",
+      "commands"
+    ],
+    "psr-4": {
+      "Kataclysm\\": "app"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "secure-http":false
+  }
+}
